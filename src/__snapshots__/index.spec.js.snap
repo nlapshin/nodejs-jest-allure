@@ -7,3 +7,11 @@ exports[`Bookstore POST /account/v1/user Should create new user 1`] = `
   "username": Any<String>,
 }
 `;
+
+exports[`User POST /account/v1/user Should create new user 1`] = `
+{
+  "books": [],
+  "userID": Any<String>,
+  "username": Any<String>,
+}
+`;

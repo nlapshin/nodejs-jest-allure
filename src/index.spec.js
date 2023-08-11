@@ -36,15 +36,54 @@ const userRequest = {
   }
 }
 
-describe("Bookstore", () => {
+
+beforeEach(() => {
+  reporter.addEnvironment('Stand', 'STAGING');
+})
+
+describe("Book", () => {
+  describe('POST /book/1/order', () => {
+    test("Should order book", async () => {
+      reporter
+        .epic('Book Tests')
+        .feature('Book Order Feature')
+        .story('Book New Order Story')
+        .description('Book or description')
+        .severity(Severity.Minor);
+
+        reporter.startStep("Authorize");
+
+        reporter.endStep();
+  
+        reporter.startStep("Add books to the cart");
+
+        expect(1).toEqual(2);
+
+        reporter.endStep();
+
+        reporter.startStep("Checkout");
+
+        reporter.endStep();
+    });
+  });
+});
+
+
+
+
+
+
+
+
+describe("User", () => {
   beforeEach(() => {
     reporter.addEnvironment('Stand', 'STAGING');
   
     reporter
-      .epic('Bookstore Tests')
-      .feature('Bookstore Feature')
-      .story('Bookstore Story')
-      .description('Bookstore description')
+      .epic('User Tests')
+      .feature('User Feature')
+      .story('User Story')
+      .description('User description')
       .severity(Severity.Critical);
   })
 

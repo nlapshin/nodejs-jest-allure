@@ -7,5 +7,5 @@ export default {
   testRunner: 'jest-jasmine2',
   setupFilesAfterEnv: [
     'jest-allure/dist/setup'
-  ],
+  ]
 }
