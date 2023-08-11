@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bookstore POST /account/v1/user Should create new user 1`] = `
+{
+  "books": [],
+  "userID": Any<String>,
+  "username": Any<String>,
+}
+`;
